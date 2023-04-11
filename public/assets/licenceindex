@@ -1,0 +1,6 @@
+# fluffy photo licence index
+# format: <filename> "\t\t" <licence> | "#" <any character>* "\n"
+# 	 <filename>: path of file in encased in double quotes with the root being
+#                '/public/assets/thirdparty/'
+#    <licence>:  valid spdx licence identifier or 'ARR' for 'All Rights Reserved'
+"20230331.png"		CC0-1.0

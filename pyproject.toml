@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fluffy"
+version = "1.0.0"
+description = "content generation for fluffy.joshwel.co"
+authors = ["Mark Joshwel <mark@joshwel.co>"]
+license = "Unlicense"
+readme = "README.md"
+packages = [
+    { include = "scribbplyscrobbply.py" },
+]
+repository = "https://github.com/markjoshwel/scribbplyscrobbply"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+scribbplyscrobbply = 'scribbplyscrobbply:cli'
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.2.0"
+
+[tool.black]
+line-length = 90
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
