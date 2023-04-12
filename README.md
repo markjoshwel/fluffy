@@ -18,7 +18,6 @@ check it out at [fluffy.joshwel.co](https://fluffy.joshwel.co)
         - [Poetry](https://python-poetry.org/)
 
     - Website Building  
-        _This is not installable via devbox yet as 0.5.9 is a recent release. ([#1](https://github.com/markjoshwel/fluffy/issues/1))_
         - [Bun >=0.5.9](https://bun.sh/)
 
     You may get them through whatever means necessary, or use devbox for a hermetic, reproducible environment.
@@ -28,16 +27,15 @@ check it out at [fluffy.joshwel.co](https://fluffy.joshwel.co)
     curl -fsSL https://get.jetpack.io/devbox | bash
     ```
 
-    ```shell
-    curl -fsSL https://bun.sh/install | bash  # get bun
-    ```
-
 2. Project Setup
+
+    > **Info**
+    >
+    > devbox users can skip these as they are done in `init_hook`, and can just run `devbox shell`.
 
     - For Content Generation
 
         ```
-        # skip these if you used devbox; just use `devbox shell`
         poetry shell
         poetry install
         ```
@@ -49,10 +47,6 @@ check it out at [fluffy.joshwel.co](https://fluffy.joshwel.co)
         ```
 
     You're all set!
-
-    > **Note**
-    >
-    > The `bun` command may not be accesible while in the devbox shell.
 
 ## Licences
 
