@@ -29,8 +29,7 @@ check it out at [fluffy.joshwel.co](https://fluffy.joshwel.co)
 
 2. Project Setup
 
-    > **Info**
-    >
+    > **Note**  
     > devbox users can skip these as they are done in `init_hook`, and can just run `devbox shell`.
 
     - For Content Generation
