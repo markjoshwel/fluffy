@@ -6,15 +6,15 @@ authors = ["Mark Joshwel <mark@joshwel.co>"]
 license = "Unlicense"
 readme = "README.md"
 packages = [
-    { include = "scribbplyscrobbply.py" },
+    { include = "fluffy.py", from = "src" },
 ]
-repository = "https://github.com/markjoshwel/scribbplyscrobbply"
+repository = "https://github.com/markjoshwel/fluffy"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
 [tool.poetry.scripts]
-scribbplyscrobbply = 'scribbplyscrobbply:cli'
+fluffygen = 'fluffy:cli'
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
