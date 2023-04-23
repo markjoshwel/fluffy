@@ -3,4 +3,8 @@
 # 	 <filename>: path of file in encased in double quotes with the root being
 #                '/public/assets/thirdparty/'
 #    <licence>:  valid spdx licence identifier or 'ARR' for 'All Rights Reserved'
-"20230331.png"		CC0-1.0
+"20230331_0.*"		CC0-1.0
+"20230331_1.*"		CC0-1.0
+"20230331_2.*"		CC0-1.0
+"20230331_3.*"		CC0-1.0
+"20230331_4.*"		CC0-1.0

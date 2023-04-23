@@ -640,7 +640,7 @@ header {
   grid-template-rows: repeat(3, minmax(0, 1fr));
   justify-content: center;
   text-align: center;
-  background-image: url("/assets/20230331_4.png");
+  background-image: url("/assets/20230331_4.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1006,7 +1006,7 @@ footer p a:hover {
   max-width: 100% !important;
   flex-direction: column;
   place-content: center;
-  background-image: url("/assets/20230331_0.png");
+  background-image: url("/assets/20230331_0.webp");
   background-position: center;
   background-size: cover;
 }
