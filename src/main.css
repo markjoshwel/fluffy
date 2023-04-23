@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SS Pretzel";
+    src: url("/public/assets/thirdparty/SSPretzel-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SS Pretzel";
+    src: url("/public/assets/thirdparty/SSPretzel-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SS Pretzel";
+    src: url("/public/assets/thirdparty/SSPretzel-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold mt-8 mb-4;
+}
+
+h1 { @apply text-8xl }
+h2 { @apply text-5xl }
+h3 { @apply text-4xl }
+h4 { @apply text-3xl }
+h5 { @apply text-2xl }
+h6 { @apply text-xl }
+
+body {
+    @apply
+        bg-black text-zinc-50
+        flex flex-col items-center justify-center
+        text-xl
+    ;
+}
+
+header, main, footer { @apply w-full items-center }
+header > *,
+main > *,
+footer > * {
+    @apply max-w-5xl px-6
+}
+
+header {
+    @apply text-center h-screen grid grid-rows-3 justify-center;
+    background-image: url("/public/assets/20230331_4.png");
+    background-position: center;
+    background-size: cover;
+}
+header #padtop { @apply h-full }
+header .smalltext { @apply mt-4 }
+header #padbelow { @apply flex flex-col justify-end items-center h-full }
+header #padbelow svg { @apply invert h-16 w-16 justify-self-end animate-bounce }
+header #padbelow p { @apply smalltext pb-8 sm:pb-14 md:pb-24}
+
+main { @apply my-8 flex flex-col justify-center text-center }
+section { @apply my-20 }
+
+footer { @apply flex flex-col justify-center text-center !not-italic smalltext mb-28 }
+footer hr { @apply mb-12 w-3/5 }
+footer p { @apply !mt-2 }
+footer p a { @apply smalltext-hover }
+
+#song {
+    @apply
+        mt-12
+        flex flex-row gap-4
+        items-center justify-center
+    ;
+}
+
+#whogallery {
+    @apply
+        grid gap-4
+        grid-cols-3 md:grid-cols-5 lg:grid-cols-10
+        justify-between items-center place-items-center
+    ;
+}
+#whogallery #whotext {
+    @apply
+        flex flex-col
+        justify-center text-center
+        col-span-3 sm:col-span-5 md:col-span-7
+        mb-8
+    ;
+}
+#whogallery .whogallery-image {
+    @apply
+        h-32 sm:h-24 md:h-[22] lg:h-20
+        w-32 sm:w-24 md:w-[22] lg:w-20
+    ;
+}
+#whogallery .whogallery-image img {
+    @apply
+        h-full w-full object-cover overflow-hidden
+        transition-all ease-in-out duration-300
+        rounded-sm hover:rounded-xl
+        hover:scale-110
+
+        bg-zinc-500 animate-pulse-bg from-zinc-500 to-zinc-600
+    ;
+}
+#whogallery #galimg1 { @apply col-span-1 lg:col-span-3 lg:mb-8 lg:w-full lg:h-full }
+#whogallery #galimg1 img { @apply lg:rounded-lg lg:hover:rounded-2xl lg:hover:scale-[102%] }
+
+#outlived {
+    @apply
+        w-full
+        flex flex-col md:flex-row
+        items-center
+    ;
+}
+#outlived h2 { @apply basis-2/5 mr-4 w-full  }
+#outlived ul {
+    @apply
+        basis-3/5
+        w-full h-full max-h-80 md:max-h-[calc(100vh/1.5)]
+        bg-zinc-200 text-zinc-950 text-4xl
+        rounded-md
+        !overflow-scroll
+    ;
+}
+#outlived ul .oldate { @apply text-zinc-500 pr-3 }
+#outlived li { @apply p-2 }
+#outlived ul > li:nth-child(even) { @apply bg-zinc-300 }
+
+#comparison table {
+    @apply
+        bg-zinc-900
+        mt-16
+        text-center text-2xl w-full
+        rounded-md
+    ;
+}
+#comparison #compcol2 { @apply border-4 border-zinc-50 rounded-md }
+
+#fqa #cards {
+    @apply
+        mt-16
+        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
+        items-center place-items-center
+    ;
+}
+
+#the_best {
+    @apply
+        !max-w-full w-full h-[110vh] 
+        flex flex-col place-content-center
+    ;
+    background-image: url("/public/assets/20230331_0.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#the_best > * { @apply max-w-5xl w-full px-6 place-self-center }
+
+.bigtext { @apply text-6xl }
+.smalltext { @apply text-zinc-50/70 text-base italic }
+.smalltext-hover { @apply hover:text-zinc-50/50 }
+
+/* .carousel {
+    @apply text-center overflow-hidden w-48 h-64;
+    margin: 0 auto;
+}
+
+.carousel-body {
+    @apply w-[calc(5*48rem)];
+    -webkit-animation: slide 20s ease infinite;
+}
+
+.carousel-slide {
+    @apply float-left w-48 h-64 object-cover
+}
+
+@~webkit-keyframes carousel-slide {
+    10% {margin-left: 0px;}
+    20% {margin-left: 192px;}
+    30% {margin-left: 192px;}
+    40% {margin-left: 384px;}
+    50% {margin-left: 384px;}
+    60% {margin-left: 576px;}
+    70% {margin-left: 576px;}
+    80% {margin-left: 768px;}
+    90% {margin-left: 768px;}
+} */
+
+.compodd { @apply bg-zinc-800 }
+
+.card { @apply h-80 w-56 [perspective:1000px] text-zinc-950 }
+.card-body {
+    @apply
+        relative w-full h-full
+        rounded-md
+        transition-all duration-500
+        [transform-style:preserve-3d]
+    ;
+}
+.card-front {
+    @apply
+        absolute w-full h-full inset-0
+        rounded-md p-4
+        object-cover
+        bg-zinc-50
+        flex min-h-full flex-col items-center justify-center
+    ;
+}
+.card-back {
+    @apply
+        absolute inset-0 w-full h-full
+        rounded-md p-4
+        bg-zinc-300 text-center
+        [transform:rotateY(180deg)]
+        [backface-visibility:hidden]
+        flex min-h-full flex-col items-center justify-center
+    ;
+}

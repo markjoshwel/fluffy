@@ -47,6 +47,11 @@ check it out at [fluffy.joshwel.co](https://fluffy.joshwel.co)
 
     You're all set!
 
+### Shorthands
+
+- `bun run dev`  
+    Runs the Tailwind CLI build process watcher
+
 ## Licences
 
 Please read the relevant sections on their respective applicable licences.
@@ -66,7 +71,7 @@ The source code of the website and content generation scripts are located in `sr
 
 ### Media
 
-Recent photographs are pledged to the public domain under the Creative Commons Zero v1.0 Universal Licence.
+Photographs deliberately contributed to the website by known contributors are pledged into the public domain under the Creative Commons Zero v1.0 Universal.
 
 Historical photographs of unknown origin are rights reserved by their respective copyright owners.
 
@@ -74,5 +79,5 @@ Refer to the [Licence Index](/public/assets/licenceindex) on what files are lice
 
 ### Fonts
 
-- Fragment Mono (OFL-1.1) - `/public/assets/thirdparty/FragmentMono*`  
-    [Repository](https://github.com/weiweihuanghuang/fragment-mono) | [Licence](/public/assets/thirdparty/FragmentMono-LICENCE.txt)
+- SS Pretzel by [Sata Linsley](https://github.com/saraoswald) (OFL-1.1) - `/public/assets/thirdparty/FragmentMono*`  
+    [Repository](https://github.com/saraoswald/fonts) | [Licence](/public/assets/thirdparty/SSPretzel-LICENCE.txt)

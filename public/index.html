@@ -7,28 +7,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fluffy!</title>
 
-    <style>
-        .fit {
-            max-width: 30%;
-            max-height: 30%;
-        }
-    </style>
+    <link rel="stylesheet" href="/public/main.min.css">
 </head>
 
 <body>
-    <h1>fluffy!</h1>
+    <header>
+        <div id="padtop"></div>
 
-    <img class="fit" src="assets/20230331.png" alt="fluffy looking silly">
+        <div>
+            <h1>fluffy!</h1>
+            <p>
+                is still alive!<br>
+                and has been for approximately:<br>
+                <span class="bigtext">
+                    3034
+                </span><br>
+                days
+            </p>
+            <p class="smalltext">
+                why approximate? because only god knows.
+            </p>
+        </div>
 
-    <p>this will soon(tm) be the fluffy website, hang on tight</p>
+        <div id="padbelow" class="grow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 292.15">
+                <path
+                    d="m157.28,133.3l-76.28,76.28L4.72,133.3l13.63-13.63,52.43,53.47V49.16h20.45v123.99l52.43-53.47,13.63,13.63Z" />
+            </svg>
+            <p>
+                scroll down!
+            </p>
+        </div>
+    </header>
 
-    <hr>
-    <p>
-        to the extent possible under law, mark joshwel, toby pang and contributors have waived all copyright and related
-        or neighboring rights to photographs published on this website. this work is published from singapore.<br>
-        <br>
-        (to be) made with all my heart, 2023. <a href="https://github.com/markjoshwel/fluffy">(source code)</a>
-    </p>
+    <main>
+        <!-- listen to fluffy -->
+        <aside id="song">
+            <p>here's a silly song for you to listen through as you scroll through:</p>
+            <iframe id='player' width='200' height='200' src='https://vid.priv.au/embed/idUAXFGNVtw?t=4'
+                style='border:none;'></iframe>
+        </aside>
+
+        <!-- who? + gallery -->
+        <section id="whogallery" clas="grid gap-4">
+            <div id="whotext">
+                <h2>
+                    who is this silly fella?
+                </h2>
+                <p>
+                    the <i>best goddamn dog out there</i>.<br>
+                    is a japanese spitz.<br>
+                    also pulchritudinous.<br>
+                    <span class="smalltext">
+                        (we fluffy enjoyers are very cultured people, so we only use a very cultured language)
+                    </span>
+                </p>
+            </div>
+
+            <div class="whogallery-image" id="galimg1"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_1.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_2.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_3.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_4.png"></div>
+            <div class="whogallery-image"><img src="/public/assets/20230331_0.png"></div>
+        </section>
+
+        <!-- people fluffy has outlived -->
+        <section id="outlived">
+            <h2>he has outlived:</h2>
+            <ul id="outlived_list">
+                <!-- <li><span class="oldate">24/04/2023 </span>This section is coming very soon™!</li> -->
+                <li><span class="oldate">24/04/2023 </span>Sana</li>
+                <li><span class="oldate">24/04/2023 </span>Colette</li>
+                <li><span class="oldate">24/04/2023 </span>Alya</li>
+                <li><span class="oldate">24/04/2023 </span>Chieri</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+                <li><span class="oldate">24/04/2023 </span>Bell</li>
+            </ul>
+        </section>
+
+        <!-- comparison table -->
+        <section id="comparison">
+            <h2>now, let's compare answers.</h2>
+            <p>and dogs.</p>
+
+            <table cellpadding="12rem">
+                <colgroup>
+                    <col>
+                    <col id="compcol2">
+                    <col>
+                </colgroup>
+                <thead>
+                    <th></th>
+                    <th>fluffy</th>
+                    <th>not fluffy</th>
+                </thead>
+                <tbody>
+                    <tr class="compodd">
+                        <td>is dog</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>is best dog</td>
+                        <td>✔️</td>
+                        <td><span class="smalltext">(who is you?)</span></td>
+                    </tr>
+                    <tr class="compodd">
+                        <td>loves everyone</td>
+                        <td>✔️</td>
+                        <td><span class="smalltext">maybe</span></td>
+                    </tr>
+                    <tr>
+                        <td>loves you</td>
+                        <td>✔️</td>
+                        <td><span class="smalltext">who knows?</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- frequently questioned answers -->
+        <section id="fqa">
+            <h2>frequently questioned answers?</h2>
+            <p class="smalltext">hover over them.</p>
+
+
+            <div id="cards">
+                <div class="group/silly card">
+                    <p class="group-hover/silly:[transform:rotateY(180deg)] card-body">
+                        <span class="card-front">
+                            Is he silly?
+                        </span>
+                        <span class="card-back">
+                            He's the <i>silliest.</i>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="group/protect card">
+                    <p class="group-hover/protect:[transform:rotateY(180deg)] card-body">
+                        <span class="card-front">
+                            Does he protect?
+                        </span>
+                        <span class="card-back">
+                            He'll bark at <i>anybody</i> who comes out the lift.
+                        </span>
+                    </p>
+                </div>
+
+                <div class="group/love card">
+                    <p class="group-hover/love:[transform:rotateY(180deg)] card-body">
+                        <span class="card-front">
+                            Can he love?
+                        </span>
+                        <span class="card-back">
+                            He'll jump on you and give you <i>all the love in the world.</i>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="group/interest card">
+                    <p class="group-hover/interest:[transform:rotateY(180deg)] card-body">
+                        <span class="card-front">
+                            Interested?
+                        </span>
+                        <span class="card-back">
+                            <!-- TODO: make 1 free fluffy card (see beatani website) -->
+                            <img src="assets/freefluffer.png" class="w-full"
+                                alt="Poorly drawn ticket, written '1 Free Fluffy'." width="5%">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- he is the best -->
+        <section id="the_best">
+            <h2>he's the best.</h2>
+            <p>period. the end.</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            unless specified, text and images on this website are contributed to the public domain under the creative
+            commons zero v1.0 universal licence.
+        </p>
+        <p>
+            to the extent possible under law, mark joshwel, toby pang and contributors have waived all copyright and
+            related or neighboring rights to fluffy website.
+        </p>
+        <p>
+            <a href="https://xphill.com/">inspired by beatani's fansite</a> //
+            <a href="https://github.com/markjoshwel/fluffy">made with all my heart, 2023</a>
+        </p>
+    </footer>
 </body>
 
 </html>

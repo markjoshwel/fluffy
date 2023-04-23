@@ -1,0 +1,28 @@
+fluffy website "important person" algorithm draft
+
+----- data (dark?) gathering -----
+
+1. scrape https://en.wikipedia.org/wiki/Lists_of_deaths_by_year
+2. recurse page until reach entity
+3. get wikidata reference
+4. !!!! EXPORT WIKIDATA NAME L18N TABLE + death day !!!!
+	{
+		"name": "Mario Artali"
+		"nametable": [
+			"Language,Label,Description,Also known as"
+		]
+	}
+
+----- data filtering -----
+
+1. comb through data and gather those with >= 50 (thanks tom scott) language translations of which have at least one/two(?) value
+2. save into filtered json (unfiltered can stay on disk idk)
+
+!!!!! boom !!!!!
+
+----- future/ci update process -----
+
+1. use utc to gather date
+2. process last and second last day
+3. do dark gathering + filtering as singular script
+4. update filtered data json
