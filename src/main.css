@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "SS Pretzel";
-    src: url("/public/assets/thirdparty/SSPretzel-Regular.woff2") format("woff2");
+    src: url("/assets/thirdparty/SSPretzel-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "SS Pretzel";
-    src: url("/public/assets/thirdparty/SSPretzel-Italic.woff2") format("woff2");
+    src: url("/assets/thirdparty/SSPretzel-Italic.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: "SS Pretzel";
-    src: url("/public/assets/thirdparty/SSPretzel-Bold.woff2") format("woff2");
+    src: url("/assets/thirdparty/SSPretzel-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: bold;
     font-display: swap;
@@ -54,7 +54,7 @@ footer > * {
 
 header {
     @apply text-center h-screen grid grid-rows-3 justify-center;
-    background-image: url("/public/assets/20230331_4.png");
+    background-image: url("/assets/20230331_4.png");
     background-position: center;
     background-size: cover;
 }
@@ -158,7 +158,7 @@ footer p a { @apply smalltext-hover }
         !max-w-full w-full h-[110vh] 
         flex flex-col place-content-center
     ;
-    background-image: url("/public/assets/20230331_0.png");
+    background-image: url("/assets/20230331_0.png");
     background-position: center;
     background-size: cover;
 }

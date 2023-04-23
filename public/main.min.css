@@ -539,7 +539,7 @@ video {
 @font-face {
   font-family: "SS Pretzel";
 
-  src: url("/public/assets/thirdparty/SSPretzel-Regular.woff2") format("woff2");
+  src: url("/assets/thirdparty/SSPretzel-Regular.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -551,7 +551,7 @@ video {
 @font-face {
   font-family: "SS Pretzel";
 
-  src: url("/public/assets/thirdparty/SSPretzel-Italic.woff2") format("woff2");
+  src: url("/assets/thirdparty/SSPretzel-Italic.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -563,7 +563,7 @@ video {
 @font-face {
   font-family: "SS Pretzel";
 
-  src: url("/public/assets/thirdparty/SSPretzel-Bold.woff2") format("woff2");
+  src: url("/assets/thirdparty/SSPretzel-Bold.woff2") format("woff2");
 
   font-weight: 700;
 
@@ -640,7 +640,7 @@ header {
   grid-template-rows: repeat(3, minmax(0, 1fr));
   justify-content: center;
   text-align: center;
-  background-image: url("/public/assets/20230331_4.png");
+  background-image: url("/assets/20230331_4.png");
   background-position: center;
   background-size: cover;
 }
@@ -1006,7 +1006,7 @@ footer p a:hover {
   max-width: 100% !important;
   flex-direction: column;
   place-content: center;
-  background-image: url("/public/assets/20230331_0.png");
+  background-image: url("/assets/20230331_0.png");
   background-position: center;
   background-size: cover;
 }
